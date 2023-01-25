@@ -1,14 +1,44 @@
-.navbarItems{
+.navbarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
+    padding: 0 30px;
+    margin: auto;
+    color: white;
+    width: 80%;
+    background-color: rgb(108, 108, 108);
+
 }
 
-ul{
+.logo {
+    color: white;
+    justify-self: start;
+    cursor: pointer;
+}
+
+.fa-react {
+    padding: 8px;
+}
+
+.nav-menu {
     list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-gap: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
 }
 
-a{
+.nav-link {
     color: inherit;
     text-decoration: none;
+}
+
+.nav-link:hover {
+    color: aquamarine;
+    transition: all 0.3s ease-in-out;
 }

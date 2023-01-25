@@ -5,10 +5,10 @@ import { NavData } from '../data/NavData'
 function Header() {
   return (
     <nav className='navbarItems'>
-      <h1>
-        Tu Tienda <i className="fab fa-react"></i>
+      <h1 className='logo'>
+        My Store<i className="fab fa-react"></i>
       </h1>
-      <ul>
+      <ul className='nav-menu'>
         {NavData.map((item, index) => (
           <li key={index}>
             <a href={item.url}
@@ -18,6 +18,9 @@ function Header() {
           </li>
         ))}
       </ul>
+      <h1 className='logo'>
+        My Store<i className="fab fa-react"></i>
+      </h1>
     </nav>
   )
 }

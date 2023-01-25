@@ -5,17 +5,17 @@ export const NavData = [
         class: 'nav-link'
     },
     {
-        title: 'Products',
-        url: '#',
-        class: 'nav-link'
-    },
-    {
         title: 'About',
         url: '#',
         class: 'nav-link'
     },
     {
         title: 'Contact',
+        url: '#',
+        class: 'nav-link'
+    },
+    {
+        title: 'Locations',
         url: '#',
         class: 'nav-link'
     }
