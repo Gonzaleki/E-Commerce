@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/header.css'
-import { NavData, NavOptions } from '../data/NavData'
+import Nav from './Nav'
+import Menu from './Menu';
 
 function Header() {
   // El estado para determinar si el header se alcanzo para que cambie el menu de static a fixed
   const [headerPosition, setHeaderPosition] = useState('static');
-  // El estado para determinar si se activa el dropdown cuando pasa el mouse por arriba
-  const [dropdownVisible, setDropdownVisible] = useState(false);
 
   // Detectamos el scroll, y activamos el handleScoll
   useEffect(() => {
@@ -28,48 +27,15 @@ function Header() {
 
 
   return (
-    <div>
-      <div className='navbarItems'>
-        <h1 className='logo'>
-          My Store<i className="fab fa-react"></i>
-        </h1>
-        <ul className='nav-menu'>
-          {NavData.map((item, index) => (
-            <li key={index}>
-              <a href={item.url}
-                className={item.class}>
-                {item.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <h1 className='logo'>
-          My Store<i className="fab fa-react"></i>
-        </h1>
+    <>
+      <div className='header'>
+        <Nav />
       </div>
-      <div className={`navbarItems-option ${headerPosition}`}>
-
-        <ul className='nav-options'>
-          {NavOptions.map((item, index) => (
-            <li key={index}
-              className={item.class}
-              onMouseEnter={() => setDropdownVisible(true)} onMouseLeave={() => setDropdownVisible(false)}>
-              {item.title}
-              <ul className={`dropdown-menu ${dropdownVisible ? 'show' : ''}`}>
-                {item.children.map((e, index)=>(
-                  <li key={index}
-                  className={e.class}>
-                    <a href={e.url}>
-                    {e.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+      <hr />
+      <div className={`menu ${headerPosition}`}>
+        <Menu />
       </div>
-    </div>
+    </>
   )
 }
 
