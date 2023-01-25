@@ -1,22 +1,205 @@
 export const NavData = [
     {
         title: 'Home',
-        url: '#',
+        url: '/home',
         class: 'nav-link'
     },
     {
         title: 'About',
-        url: '#',
+        url: '/about',
         class: 'nav-link'
     },
     {
         title: 'Contact',
-        url: '#',
+        url: '/contact',
         class: 'nav-link'
     },
     {
         title: 'Locations',
-        url: '#',
+        url: '/location',
         class: 'nav-link'
+    }
+]
+
+export const NavOptions = [
+    {
+        title: 'Shirts',
+        class: 'nav-option-link',
+        children: [
+            {
+                title: 'T-Shirts',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Tank Tops',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Polos',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Henleys',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Casual Button-Down',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            }
+        ]
+    },
+    {
+        title: 'Shirts',
+        class: 'nav-option-link',
+        children: [
+            {
+                title: 'T-Shirts',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Tank Tops',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Polos',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Henleys',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Casual Button-Down',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            }
+        ]
+    },
+    {
+        title: 'Shirts',
+        class: 'nav-option-link',
+        children: [
+            {
+                title: 'T-Shirts',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Tank Tops',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Polos',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Henleys',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Casual Button-Down',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            }
+        ]
+    },
+    {
+        title: 'Shirts',
+        class: 'nav-option-link',
+        children: [
+            {
+                title: 'T-Shirts',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Tank Tops',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Polos',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Henleys',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            },
+            {
+                title: 'Casual Button-Down',
+                url: '#',
+                class: 'nav-option-dropdown'
+
+            }
+        ]
+    },
+    {
+        title: 'Shirts',
+        class: 'nav-option-link',
+        children: [
+            {
+                title: 'T-Shirts',
+                url: '#',
+                class: 'nav-option-dropdown'
+                
+            },
+            {
+                title: 'Tank Tops',
+                url: '#',
+                class: 'nav-option-dropdown'
+                
+            },
+            {
+                title: 'Polos',
+                url: '#',
+                class: 'nav-option-dropdown'
+                
+            },
+            {
+                title: 'Henleys',
+                url: '#',
+                class: 'nav-option-dropdown'
+                
+            },
+            {
+                title: 'Casual Button-Down',
+                url: '#',
+                class: 'nav-option-dropdown'
+                
+            }
+        ]
     }
 ]
