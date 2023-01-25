@@ -1,3 +1,7 @@
+*{
+    font-family: 'Spinnaker', sans-serif;
+}
+
 hr {
     width: 70%;
     opacity: 0.2;
@@ -35,14 +39,16 @@ hr {
 }
 
 .header-link {
-    color: rgba(255, 255, 255, 0.815);
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
 .header-link:hover {
-    color: rgb(255, 255, 255);
-    transition: all 0.2s ease-in-out;
+    text-decoration: underline 5px;
+    text-decoration-color:#6b2a8a;
+    text-underline-offset: 10px;
+
 }
 
 .menu.static {

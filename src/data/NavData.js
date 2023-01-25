@@ -63,13 +63,13 @@ export const NavOptions = [
         class: 'menu-link',
         children: [
             {
-                title: 'T-Shirts',
+                title: 'Pullovers',
                 url: '#',
                 class: 'dropdown-link'
 
             },
             {
-                title: 'Tank Tops',
+                title: 'Cardigans',
                 url: '#',
                 class: 'dropdown-link'
 
@@ -81,13 +81,7 @@ export const NavOptions = [
 
             },
             {
-                title: 'Henleys',
-                url: '#',
-                class: 'dropdown-link'
-
-            },
-            {
-                title: 'Casual Button-Down',
+                title: 'Vests',
                 url: '#',
                 class: 'dropdown-link'
 
@@ -95,35 +89,29 @@ export const NavOptions = [
         ]
     },
     {
-        title: 'Shirts',
+        title: 'Jeans',
         class: 'menu-link',
         children: [
             {
-                title: 'T-Shirts',
+                title: 'Regular',
                 url: '#',
                 class: 'dropdown-link'
 
             },
             {
-                title: 'Tank Tops',
+                title: 'Fit',
                 url: '#',
                 class: 'dropdown-link'
 
             },
             {
-                title: 'Polos',
+                title: 'Skinny Fit',
                 url: '#',
                 class: 'dropdown-link'
 
             },
             {
-                title: 'Henleys',
-                url: '#',
-                class: 'dropdown-link'
-
-            },
-            {
-                title: 'Casual Button-Down',
+                title: 'Wrangler',
                 url: '#',
                 class: 'dropdown-link'
 
@@ -131,35 +119,23 @@ export const NavOptions = [
         ]
     },
     {
-        title: 'Shirts',
+        title: 'Pants',
         class: 'menu-link',
         children: [
             {
-                title: 'T-Shirts',
+                title: 'Dress',
                 url: '#',
                 class: 'dropdown-link'
 
             },
             {
-                title: 'Tank Tops',
+                title: 'Casual',
                 url: '#',
                 class: 'dropdown-link'
 
             },
             {
-                title: 'Polos',
-                url: '#',
-                class: 'dropdown-link'
-
-            },
-            {
-                title: 'Henleys',
-                url: '#',
-                class: 'dropdown-link'
-
-            },
-            {
-                title: 'Casual Button-Down',
+                title: 'Joggings',
                 url: '#',
                 class: 'dropdown-link'
 
@@ -167,35 +143,29 @@ export const NavOptions = [
         ]
     },
     {
-        title: 'Shirts',
+        title: 'Shorts',
         class: 'menu-link',
         children: [
             {
-                title: 'T-Shirts',
+                title: 'Cargo',
                 url: '#',
                 class: 'dropdown-link'
                 
             },
             {
-                title: 'Tank Tops',
+                title: 'Denim',
                 url: '#',
                 class: 'dropdown-link'
                 
             },
             {
-                title: 'Polos',
+                title: 'Flat Front',
                 url: '#',
                 class: 'dropdown-link'
                 
             },
             {
-                title: 'Henleys',
-                url: '#',
-                class: 'dropdown-link'
-                
-            },
-            {
-                title: 'Casual Button-Down',
+                title: 'Pleated',
                 url: '#',
                 class: 'dropdown-link'
                 
