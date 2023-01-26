@@ -9,7 +9,7 @@ function Menu({ items }) {
                 <a href={e.url}
                     className={e.class}
                     key={index}>
-                    {e.title}
+                    {e.title} 
                 </a>
             ))}
         </div>

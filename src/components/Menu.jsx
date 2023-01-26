@@ -9,7 +9,7 @@ function Menu() {
             {NavOptions.map((item, index) => (
                 <li key={index}
                     className={item.class}>
-                    <button>{item.title}</button>
+                    <button>{item.title}<i className='fa-solid fa-chevron-down'></i></button> 
                     <SubMenu items={item.children} />
                 </li>
             ))}
