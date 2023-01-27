@@ -1,10 +1,13 @@
 import ImageSlider from "./ImageSlider";
+import '../styles/home.css'
 
 function Home() {
     return (
         <>
-        <ImageSlider/>
-        <h1>Esto es Home</h1>
+            <ImageSlider />
+            <div className="home">
+                <h1>Esto es Home</h1>
+            </div>
         </>
     )
 };
