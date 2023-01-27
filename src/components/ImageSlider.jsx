@@ -14,12 +14,12 @@ function ImageSlider() {
     }
 
     return (
-        <>
+        <div style={{background: '#8900ca'}}>
             {currentIndex === 0 ? <i></i> : <i className="fa-sharp fa-solid fa-circle-chevron-left" onClick={previousImg}></i>}
-            <img src={Slides[currentIndex].src} alt="" />
+            <img style={{width:'100%'}} src={Slides[currentIndex].src} alt="" />
             {currentIndex === (Slides.length-1) ? <i></i> : <i className="fa-sharp fa-solid fa-circle-chevron-right" onClick={nextImg}></i>}
 
-        </>
+        </div>
     )
 }
 
