@@ -1,6 +1,12 @@
 import React from "react"
-import Header from './components/Header.jsx'
 import './App.css'
+import { Routes, Route } from "react-router-dom"
+import Header from './components/Header.jsx'
+import About from "./components/About"
+import Contact from "./components/Contact"
+import Locations from "./components/Location"
+import Home from "./components/Home"
+
 
 function App() {
 
@@ -10,7 +16,15 @@ function App() {
       <div className="nav-elements">
         <Header />
       </div>
-
+      <div className='home'>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/location' element={<Locations />} />
+      </Routes>
+      </div>
+      
     </>
   )
 }

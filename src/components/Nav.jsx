@@ -1,5 +1,6 @@
 import { NavData } from "../data/NavData"
 import '../styles/header.css'
+import { Link } from "react-router-dom";
 
 function Nav() {
 
@@ -11,10 +12,10 @@ function Nav() {
         <ul className='header-items'>
           {NavData.map((item, index) => (
             <li key={index}>
-              <a href={item.url}
+              <Link to={item.url}
                 className={item.class}>
                 {item.title}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

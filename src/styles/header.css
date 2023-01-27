@@ -35,6 +35,7 @@ hr {
     align-items: center;
     text-align: center;
     justify-content: center;
+    cursor: pointer;
 
 }
 
@@ -88,7 +89,7 @@ hr {
     display: grid;
     grid-template-columns: repeat(5, auto);
     list-style: none;
-    grid-gap: 45%;
+    grid-gap: 30%;
     align-items: center;
     text-align: center;
     justify-content: space-around;

@@ -24,8 +24,7 @@ function Header() {
       setHeaderPosition('static');
     }
   }
-console.log(window.pageYOffset
-  )
+  
 
   return (
     <>

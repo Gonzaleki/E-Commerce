@@ -1,7 +1,7 @@
 export const NavData = [
     {
         title: 'Home',
-        url: '/home',
+        url: '/',
         class: 'header-link'
     },
     {
