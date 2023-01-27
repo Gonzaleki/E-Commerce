@@ -6,6 +6,7 @@ import About from "./components/About"
 import Contact from "./components/Contact"
 import Locations from "./components/Location"
 import Home from "./components/Home"
+import ImageSlider from "./components/ImageSlider"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <>
       <div className="nav-elements">
         <Header />
+        <ImageSlider />
       </div>
       <div className='home'>
       <Routes>

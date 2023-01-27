@@ -23,6 +23,32 @@ hr {
     cursor: pointer;
 }
 
+.fa-circle-chevron-left{
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 42px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+img{
+    transition: all 1s ease-in-out;
+}
+
+.fa-circle-chevron-right{
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 42px;
+    z-index: 1;
+    cursor: pointer;
+}
+
 .fa-react {
     padding: 8px;
 }
