@@ -6,7 +6,21 @@ function Home() {
         <>
             <ImageSlider />
             <div className="home">
-                <h1>Esto es Home</h1>
+                <h1 className="title">Special Offers</h1>
+                <hr />
+                <div className="cards">
+                    <div className="card">
+                        Esta carta es una prueba
+                    </div>
+                    <div className="card">
+                        Esta carta es una prueba
+                    </div>
+                    <div className="card">
+                        Esta carta es una prueba
+                    </div>
+                </div>
+                <button>Show more</button>
+
             </div>
         </>
     )

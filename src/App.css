@@ -4,3 +4,26 @@
     background-color: #3e138d;
 }
 
+.chart{
+    padding: 20px;
+    font-size: 23px;
+    background-color: green;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: fit-content;
+    border: 5px solid;
+    border-color: white;
+    border-radius: 50%;
+    width: fit-content;
+    position: fixed;
+    right: 10px;
+    top: 80px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.chart:hover{
+    transition: all 0.5 ease-in-out;
+
+}
