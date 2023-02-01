@@ -18,7 +18,7 @@ function Header() {
   // el handlescroll se fija ei el pageYOffset llego a 100 o mas, para asi cambiar 
   // el estado del header a fixed o si es menor a static
   const handleScroll = () => {
-    if (window.pageYOffset > 159) {
+    if (window.pageYOffset > 155) {
       setHeaderPosition('fixed');
     } else {
       setHeaderPosition('static');
@@ -32,9 +32,14 @@ function Header() {
         <Nav />
       </div>
       <hr />
-      <div className={`menu ${headerPosition}`}>
+      <div className='menu static'>
         <Menu />
       </div>
+      {window.pageYOffset > 155 ? (
+        <div className={`menu ${headerPosition}`}>
+        <Menu />
+      </div>
+      ):<></>}
     </>
   )
 }
