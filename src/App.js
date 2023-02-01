@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect} from "react"
 import './App.css'
 import { Routes, Route } from "react-router-dom"
 import Header from './components/Header.jsx'
@@ -9,11 +9,41 @@ import Home from "./components/Home"
 
 
 function App() {
+  const [chartColor, setChartColor] = useState({
+    background: 'white',
+    color: '#4e4e4e'
+  });
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 128) {
+      setChartColor({
+        background: '#3e138d',
+        color: 'white'
+      });
+    } else {
+      setChartColor({
+        background: 'white',
+        color: '#3e138d'
+      });
+    }
+  }
 
   return (
     <>
-      <button className="chart"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+      <button className="chart"
+        style={chartColor}>
+        <i className="fa-sharp fa-solid fa-cart-shopping"></i>
+      </button>
+
+
+
       <div className="nav-elements">
         <Header />
 
