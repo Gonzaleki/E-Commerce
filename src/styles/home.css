@@ -1,6 +1,7 @@
 .home {
     padding: 30px 15%;
     text-align: center;
+    margin: 25px 0;
 }
 
 .home hr {
@@ -86,11 +87,7 @@
     background-color: #3e138d;
 }
 
-.discount button:hover{
-    color: white;
-    font-weight: bold;
-}
-
+.discount button:hover,
 .discount button:hover i{
     color: white;
     font-weight: bold;
@@ -116,6 +113,29 @@ footer{
     background-color: black;
 }
 
+.links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px
+}
+
 .links i{
-    padding: 0 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.terms span{
+ cursor: pointer;   
+}
+
+.terms span:hover,
+.links i:hover,
+footer h2:hover{
+    color: #7f43ef;
+}
+
+
+footer .copyright{
+    font-size: 14px;
+    color: grey;
 }

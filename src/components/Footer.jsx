@@ -4,15 +4,18 @@ import '../styles/home.css'
 export default function Footer() {
     return (
         <footer>
-            <h3>Este es el footer</h3>
+            <div className='terms'>
+                <span>Policy </span> | <span> Terms of Service </span>
+                <div className='copyright'>@copyright Gonzaleki</div>
+            </div>
             <div className="links">
                 <i className="fab fa-instagram"></i>
                 <i className="fab fa-tiktok"></i>
                 <i className="fab fa-twitter"></i>
             </div>
-            <h3 className='logo'>
+            <h2 className='logo'>
                 My Store<i className="fab fa-react"></i>
-            </h3>
+            </h2>
         </footer>
     )
 }
