@@ -1,26 +1,18 @@
 import ImageSlider from "./ImageSlider";
 import '../styles/home.css'
+import SpecialOffer from "./SpecialOffer";
 
 function Home() {
     return (
         <>
             <ImageSlider />
-            <div className="home">
-                <h1 className="title">Special Offers</h1>
-                <hr />
-                <div className="cards">
-                    <div className="card">
-                        Esta carta es una prueba
-                    </div>
-                    <div className="card">
-                        Esta carta es una prueba
-                    </div>
-                    <div className="card">
-                        Esta carta es una prueba
-                    </div>
-                </div>
-                <button>Show more</button>
-
+            <SpecialOffer />
+            <div className="discount">
+                <h2>Get your 20% discount for this SUMMER</h2>
+                <button  onClick={() => { alert('Hola') }}>
+                    Apply <span>NOW</span> !!  
+                    <i className="fa-sharp fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </>
     )

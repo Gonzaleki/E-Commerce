@@ -1,4 +1,4 @@
-.home{
+.home {
     padding: 30px 15%;
     text-align: center;
 }
@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.cards{
+.cards {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -30,13 +30,13 @@
     padding: 8px;
 }
 
-.card:hover{
+.card:hover {
     transition: all 100ms ease-in-out;
     border: 6px solid;
-    border-color: #6b2a8a;
+    border-color: #7f7f7f;
 }
 
-.home button{
+.home button {
     margin-top: 2%;
     padding: 20px;
     cursor: pointer;
@@ -48,13 +48,52 @@
     border: none;
 }
 
-.home button:hover{
+.home button:hover {
     transition: all 0.5s ease-in-out;
     font-size: 22px;
     color: white;
 }
 
-.home hr{
+.home hr {
     margin-top: 2%;
     margin-bottom: 4%;
+}
+
+.discount {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    color: white;
+    background-color: #7f7f7f;
+}
+
+.discount h2 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.discount button {
+    padding: 10px 60px;
+    margin-top: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: 2px solid;
+    border-color: white;
+}
+
+.discount span{
+    text-decoration-color:#ffffff;
+    text-underline-offset: 2.5px;
+    text-decoration: underline;
+}
+
+.discount i{
+    color: white;
+    margin-left: 15px;
 }
