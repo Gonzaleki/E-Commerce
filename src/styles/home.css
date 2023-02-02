@@ -49,7 +49,7 @@
 }
 
 .home button:hover {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     font-size: 22px;
     color: white;
 }
@@ -74,17 +74,26 @@
     font-size: 40px;
     margin: 0;
     font-weight: bold;
+    text-shadow: 1px 2px 2px black;
 }
 
 .discount button {
-    padding: 10px 60px;
+    padding: 18px 50px;
     margin-top: 30px;
     font-size: 25px;
     cursor: pointer;
+    color: rgb(219, 219, 219);
+    background-color: #3e138d;
+}
+
+.discount button:hover{
     color: white;
-    background-color: black;
-    border: 2px solid;
-    border-color: white;
+    font-weight: bold;
+}
+
+.discount button:hover i{
+    color: white;
+    font-weight: bold;
 }
 
 .discount span{
@@ -94,6 +103,19 @@
 }
 
 .discount i{
-    color: white;
+    color: rgb(219, 219, 219);
     margin-left: 15px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 30px 15px;
+    background-color: black;
+}
+
+.links i{
+    padding: 0 30px;
 }

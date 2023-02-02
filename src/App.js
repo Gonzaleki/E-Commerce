@@ -44,12 +44,10 @@ function App() {
         <i className="fa-sharp fa-solid fa-cart-shopping"></i>
       </button>
 
-
-
       <div className="nav-elements">
         <Header />
-
       </div>
+
       <div>
         <Routes>
           <Route path='/' element={<Home />} />
