@@ -17,24 +17,29 @@
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     gap: 20px;
-    text-align: center;
 }
 
 .card {
-    height: 270px;
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding: 8px;
 }
 
 .card:hover {
     transition: all 100ms ease-in-out;
     border: 6px solid;
     border-color: #7f7f7f;
+}
+
+.card img{
+    padding: 0;
+    margin: 0;
+    max-width: fit-content;
 }
 
 .home hr {
