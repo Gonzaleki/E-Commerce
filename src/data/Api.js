@@ -22,7 +22,7 @@ export const DataBase = [
     },
     {
         id: 3,
-        name: 'T-Shirt XL',
+        name: 'T-Shirt M',
         type: 'shirts',
         subtype: 't-shirt',
         price: 30,

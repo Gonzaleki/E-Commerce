@@ -4,7 +4,7 @@
     background-color: #3e138d;
 }
 
-.chart{
+.cart{
     padding: 20px;
     font-size: 23px;
     align-items: center;
@@ -22,7 +22,7 @@
 }
 
 
-.chart:hover{
+.cart:hover{
     transition: all 0.5 ease-in-out;
 
 }

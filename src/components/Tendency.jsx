@@ -18,8 +18,8 @@ export default function Tendency() {
                         <div key={item.id} className='card'>
                             <img src={item.img} alt=''></img>
                             <span className='card__inner'>
-                                <h3>{item.name}</h3>
-                                <h3>{formatter.format(item.price)}</h3>
+                                <h3 style={{marginBottom: 0}}>{item.name}</h3>
+                                <h3 style={{marginTop: 0}}>{formatter.format(item.price)}</h3>
                                 <button className='add-cart'>Add To Cart <i className="fa-sharp fa-solid fa-cart-shopping"></i></button>
                             </span>
                         </div>

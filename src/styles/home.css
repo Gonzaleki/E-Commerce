@@ -38,13 +38,13 @@
     bottom: 0;
     width: 100%;
     text-align: center;
+    font-family: inherit;
     height: 0;
     color: white;
     background-color: #3e138dd8;
     transition: height 0.2s ease-out;
     overflow: hidden;
 }
-
 
 
 .card:hover {
@@ -54,7 +54,7 @@
 }
 
 .card:hover .card__inner {
-    height: 42%;
+    height: 38%;
 }
 
 .card img {
@@ -90,6 +90,7 @@
     margin-top: 15px;
     padding: 25px 35px;
     border: unset;
+    font-weight: bold;
     color: white;
     z-index: 1;
     background: #000;
@@ -118,10 +119,6 @@
 
 }
 
-.animated-btn:hover,
-.animated-btn:hover i {
-    font-weight: bold;
-}
 
 .animated-btn:hover::before {
     width: 100%;

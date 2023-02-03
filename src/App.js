@@ -9,7 +9,7 @@ import Home from "./components/Home"
 
 
 function App() {
-  const [chartColor, setChartColor] = useState({
+  const [cartColor, setCartColor] = useState({
     background: 'white',
     color: '#4e4e4e'
   });
@@ -23,12 +23,12 @@ function App() {
 
   const handleScroll = () => {
     if (window.pageYOffset > 128) {
-      setChartColor({
+      setCartColor({
         background: '#3e138d',
         color: 'white'
       });
     } else {
-      setChartColor({
+      setCartColor({
         background: 'white',
         color: '#3e138d'
       });
@@ -39,8 +39,8 @@ function App() {
 
   return (
     <>
-      <button className="chart"
-        style={chartColor}>
+      <button className="cart"
+        style={cartColor}>
         <i className="fa-sharp fa-solid fa-cart-shopping"></i>
       </button>
 
