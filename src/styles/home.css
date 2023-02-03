@@ -22,21 +22,42 @@
 }
 
 .card {
-    cursor: pointer;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    border: 6px solid;
+    border-color: rgba(255, 255, 255, 0);
+    width: fit-content;
+    position: relative;
 }
+
+
+.card__inner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 0;
+    color: white;
+    background-color: #3e138dd8;
+    transition: height 0.2s ease-out;
+    overflow: hidden;
+}
+
+
 
 .card:hover {
     transition: all 100ms ease-in-out;
     border: 6px solid;
-    border-color: #7f7f7f;
+    border-color: #bdbdbd;
 }
 
-.card img{
+.card:hover .card__inner {
+    height: 42%;
+}
+
+.card img {
     padding: 0;
     margin: 0;
     max-width: fit-content;
@@ -71,11 +92,11 @@
     border: unset;
     color: white;
     z-index: 1;
-    background: #3e138d;
+    background: #000;
     position: relative;
     font-size: 20px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
     overflow: hidden;
     cursor: pointer;
@@ -88,7 +109,7 @@
     left: 0;
     height: 100%;
     width: 0;
-    background-color: white;
+    background-color: #3e138d;
     z-index: -1;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
@@ -99,13 +120,50 @@
 
 .animated-btn:hover,
 .animated-btn:hover i {
-    color: #212121;
     font-weight: bold;
 }
 
 .animated-btn:hover::before {
     width: 100%;
-   }
+}
+
+
+.add-cart {
+    width: 9em;
+    height: 2.2em;
+    color: white;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.add-cart i{
+    padding: 0 5px;
+}
+
+.add-cart::before {
+    content: '';
+    width: 0;
+    height: 2.2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #31a544 0%, #0fd850 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.add-cart:hover::before {
+    width: 9em;
+}
+
 .discount span {
     text-decoration-color: #ffffff;
     text-underline-offset: 2.5px;
