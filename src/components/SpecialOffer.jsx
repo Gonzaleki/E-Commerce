@@ -18,8 +18,7 @@ export default function SpecialOffer() {
                     Esta carta es una prueba
                 </div>
             </div>
-            <button>Show more</button>
-
+            <button className='animated-btn'>Show more</button>
         </div>
     )
 }

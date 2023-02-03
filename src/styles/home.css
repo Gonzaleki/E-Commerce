@@ -37,24 +37,6 @@
     border-color: #7f7f7f;
 }
 
-.home button {
-    margin-top: 2%;
-    padding: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    color: rgb(219, 219, 219);
-    text-decoration: none;
-    background-color: #3e138d;
-    text-align: center;
-    border: none;
-}
-
-.home button:hover {
-    transition: all 0.2s ease-in-out;
-    font-size: 22px;
-    color: white;
-}
-
 .home hr {
     margin-top: 2%;
     margin-bottom: 4%;
@@ -78,33 +60,59 @@
     text-shadow: 1px 2px 2px black;
 }
 
-.discount button {
-    padding: 18px 50px;
-    margin-top: 30px;
-    font-size: 25px;
+.animated-btn {
+    margin-top: 15px;
+    padding: 25px 35px;
+    border: unset;
+    color: white;
+    z-index: 1;
+    background: #3e138d;
+    position: relative;
+    font-size: 20px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
     cursor: pointer;
-    color: rgb(219, 219, 219);
-    background-color: #3e138d;
 }
 
-.discount button:hover,
-.discount button:hover i{
-    color: white;
+.animated-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    cursor: pointer;
+
+}
+
+.animated-btn:hover,
+.animated-btn:hover i {
+    color: #212121;
     font-weight: bold;
 }
 
-.discount span{
-    text-decoration-color:#ffffff;
+.animated-btn:hover::before {
+    width: 100%;
+   }
+.discount span {
+    text-decoration-color: #ffffff;
     text-underline-offset: 2.5px;
     text-decoration: underline;
 }
 
-.discount i{
+.discount i {
     color: rgb(219, 219, 219);
     margin-left: 15px;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -113,29 +121,29 @@ footer{
     background-color: black;
 }
 
-.links{
+.links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 70px
 }
 
-.links i{
+.links i {
     font-size: 24px;
     cursor: pointer;
 }
 
-.terms span{
- cursor: pointer;   
+.terms span {
+    cursor: pointer;
 }
 
 .terms span:hover,
 .links i:hover,
-footer h2:hover{
+footer h2:hover {
     color: #7f43ef;
 }
 
 
-footer .copyright{
+footer .copyright {
     font-size: 14px;
     color: grey;
 }
