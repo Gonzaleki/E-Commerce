@@ -1,0 +1,18 @@
+.form-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+}
+
+.form-product input{
+    margin: 0;
+    text-align: center;
+    width: 30%;
+}
+
+.form-product label{
+    padding: 15px;
+}

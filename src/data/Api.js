@@ -40,6 +40,16 @@ export const DataBase = [
         tendency: true,
         offer: true
     },
+    {
+        id: 5,
+        name: 'Jean 43',
+        type: 'jeans',
+        subtype: 'fit',
+        price: 18,
+        img: 'https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/72d1581a080f44fab2a1ae0d01030142_9366/pantalon-adicolor-classics-firebird-primeblue.jpg',
+        tendency: false,
+        offer: true
+    },
 
 ]
 
