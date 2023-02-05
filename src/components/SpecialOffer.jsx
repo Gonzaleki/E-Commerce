@@ -21,7 +21,7 @@ export default function SpecialOffer() {
                             <img src={item.img} alt=''></img>
                             <span className='card__inner'>
                                 <h3 style={{marginBottom: 0}}>{item.name}</h3>
-                                <h3 style={{marginTop: 0}}>{formatter.format(item.price)}</h3>
+                                <h3 style={{margin: 3}}>{formatter.format(item.price)}</h3>
                                 <button className='add-cart'>ADD TO CART <i className="fa-sharp fa-solid fa-cart-shopping"></i></button>
                             </span>
                         </div>
