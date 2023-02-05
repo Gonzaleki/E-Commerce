@@ -5,19 +5,19 @@ export default function Services() {
     return (
         <div className="services">
             <div>
-                <i class="fa-sharp fa-solid fa-truck-fast"></i>
+                <i className="fa-sharp fa-solid fa-truck-fast"></i>
                 <p>We have free shiping for our oldest clients</p>
             </div>
             <div>
-                <i class="fa-sharp fa-solid fa-city"></i>
+                <i className="fa-sharp fa-solid fa-city"></i>
                 <p>Now we reach all major cities in USA</p>
             </div>
             <div>
-                <i class="fa-sharp fa-solid fa-headset"></i>
+                <i className="fa-sharp fa-solid fa-headset"></i>
                 <p>Full assitance 24/7 by every channel</p>
             </div>
             <div>
-                <i class="fa-solid fa-users-line"></i>
+                <i className="fa-solid fa-users-line"></i>
                 <p>Our community keeps growing every day</p>
             </div>
         </div>

@@ -1,12 +1,29 @@
 const express = require('express')
 const app = express()
 
-app.post('/api/dataBase', (req,res)=>{
-  const newProduct = req.body;
-  dataBase.push(newProduct);
-  res.status(201).send("Product added successfully");
+app.use(express.json());
+
+app.get('/api/dataBase', (req, res)=>{
+  res.json(dataBase)
 })
 
+
+app.post('/api/dataBase', (req,res)=>{
+  const newProduct = {
+    id: dataBase.length + 1,
+    name: req.body.name,
+    type: req.body.type,
+    subtype: req.body.subtype,
+    price: req.body.price,
+    img: req.body.img,
+    tendency: req.body.tendency,
+    offer: req.body.offer,
+  };
+  dataBase.push(newProduct);
+  res.status(201).send(newProduct);
+  res.status(201).send(dataBase);
+  
+})
 app.listen(2000, () => {
   console.log('Puerto exitoso en 2000')
 })
