@@ -37,7 +37,7 @@ export const DataBase = [
         subtype: 't-shirt',
         price: 22,
         img: 'https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/6c940ca740c34cdf85aeae8500bd8626_9366/remera-designed-for-training.jpg',
-        tendency: true,
+        tendency: false,
         offer: true
     },
     {

@@ -6,16 +6,30 @@ import Tendency from "./Tendency";
 import Footer from './Footer'
 import Services from "./Services";
 import UploadForm from "./UploadForm";
+import { useState, useEffect } from "react";
 
 function Home() {
-
+    const [data, setData] = useState(null);
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await fetch("/api/dataBase");
+            const json = await response.json();
+            setData(json);
+          } catch (error) {
+            console.log(error)
+          }
+        };
+    
+        fetchData();
+      }, []);
 
     return (
         <>
             <ImageSlider />
-            <SpecialOffer />
+            <SpecialOffer products={data} />
             <Discount />
-            <Tendency />
+            <Tendency products={data}/>
             <hr />
             <Services />
             <UploadForm />
