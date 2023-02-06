@@ -10,9 +10,16 @@
 .form-product input{
     margin: 0;
     text-align: center;
-    width: 30%;
+    width: 15%;
+    height: 30px;
 }
 
 .form-product label{
     padding: 15px;
+}
+
+select{
+    width: 15%;
+    text-align: center;
+    height: 30px;
 }

@@ -6,6 +6,7 @@ export default function Admin() {
   return (
     <div>
         <h2 style={{textAlign:"center"}}>admin panel</h2>
+        <h2 style={{textAlign:"center"}}>upload product</h2>
         <UploadForm />
     </div>
     
