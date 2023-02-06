@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/home.css'
-import { DataBase } from '../data/Api'
 
 export default function Tendency(props) {
     const formatter = new Intl.NumberFormat('en-US', {
