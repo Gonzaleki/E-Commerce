@@ -22,7 +22,7 @@ app.post('/api/dataBase', (req,res)=>{
   dataBase.push(newProduct);
   res.status(201).send(newProduct);
   res.status(201).send(dataBase);
-  
+  return
 })
 app.listen(2000, () => {
   console.log('Puerto exitoso en 2000')

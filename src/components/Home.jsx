@@ -5,7 +5,6 @@ import Discount from "./Discount";
 import Tendency from "./Tendency";
 import Footer from './Footer'
 import Services from "./Services";
-import UploadForm from "./UploadForm";
 import { useState, useEffect } from "react";
 
 function Home() {
@@ -32,7 +31,6 @@ function Home() {
             <Tendency products={data}/>
             <hr />
             <Services />
-            <UploadForm />
             <Footer />
         </>
     )
