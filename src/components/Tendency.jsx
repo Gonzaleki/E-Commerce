@@ -1,7 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/home.css'
 
 export default function Tendency(props) {
+    const [page, setPage] = useState(0)
+    const itemsPerPage = 3
+
+
+
+
     const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: 'USD',
@@ -11,12 +17,21 @@ export default function Tendency(props) {
         return console.log('no hay')
     }
 
+    let currentTendencies = props.products.filter(e => e.tendency)
+
+    const currentItems = currentTendencies.slice(0, page * itemsPerPage + itemsPerPage)
+    console.log(currentItems)
+    const handleShowMore = () => {
+        setPage(page + 1);
+    };
+
+
     return (
         <div className="home">
             <h1 className="title">Tendency</h1>
             <hr />
             <div className="cards">
-                {props.products.map((item) => (
+                {currentItems.map((item) => (
                     item.tendency ? (
                         <div key={item.id} className='card'>
                             <img src={item.img} alt=''></img>
@@ -31,7 +46,9 @@ export default function Tendency(props) {
                 )
                 )}
             </div>
-
+            {page * itemsPerPage + itemsPerPage < currentTendencies.length && (
+                <button className='animated-btn' onClick={handleShowMore}>SHOW MORE</button>
+            )}
         </div>
     )
 }

@@ -19,6 +19,10 @@ export default function UploadForm() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
 
+    const handleChangeCheck = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.checked });
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         axios
@@ -42,10 +46,10 @@ export default function UploadForm() {
                     onChange={handleChange} />
                 <label htmlFor="tendency">Is Tendency?</label>
                 <input type="checkbox" name="tendency" id="tendency" placeholder="tendency of product" value={formData.tendency}
-                    onChange={handleChange} />
+                    onChange={handleChangeCheck} />
                 <label htmlFor="offer">Is Offer?</label>
                 <input type="checkbox" name="offer" id="offer" placeholder="offer of product" value={formData.offer}
-                    onChange={handleChange} />
+                    onChange={handleChangeCheck} />
                 <button style={{ marginTop: '10px' }} type="submit">Upload product</button>
             </form>
         </div>
