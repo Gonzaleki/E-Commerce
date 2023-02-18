@@ -6,19 +6,14 @@ import '../styles/home.css'
 export default function SpecialOffer(props) {
     const [page, setPage] = useState(0)
     const itemsPerPage = 3
-
-
-
-
     const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: 'USD',
     });
 
     if (props.products == null) {
-        return console.log('no hay')
+        return 
     }
-
     let currentOffers = props.products.filter(e => e.offer)
 
     const currentItems = currentOffers.slice(0, page * itemsPerPage + itemsPerPage)
@@ -34,7 +29,6 @@ export default function SpecialOffer(props) {
             <hr />
             <div className="cards">
                 {currentItems.map((item) => (
-
                     <div key={item.id} className='card'>
                         <img src={item.img} alt=''></img>
                         <span className='card__inner'>
@@ -43,7 +37,6 @@ export default function SpecialOffer(props) {
                             <button className='add-cart'>ADD TO CART <i className="fa-sharp fa-solid fa-cart-shopping"></i></button>
                         </span>
                     </div>
-
                 )
                 )}
             </div>

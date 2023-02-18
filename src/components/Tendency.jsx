@@ -14,13 +14,12 @@ export default function Tendency(props) {
     });
 
     if (props.products == null) {
-        return console.log('no hay')
+        return
     }
 
     let currentTendencies = props.products.filter(e => e.tendency)
 
     const currentItems = currentTendencies.slice(0, page * itemsPerPage + itemsPerPage)
-    console.log(currentItems)
     const handleShowMore = () => {
         setPage(page + 1);
     };

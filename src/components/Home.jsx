@@ -10,17 +10,10 @@ import { useState, useEffect } from "react";
 function Home() {
     const [data, setData] = useState(null);
     useEffect(() => {
-        const fetchData = async () => {
-          try {
-            const response = await fetch("/api/dataBase");
-            const json = await response.json();
-            setData(json);
-          } catch (error) {
-            console.log(error)
-          }
-        };
-    
-        fetchData();
+      fetch('/api/mydata')
+      .then(res=> res.json())
+      .then(res => setData(res))
+      .catch(error => console.error(error));
       }, []);
 
     return (
