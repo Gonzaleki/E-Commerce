@@ -6,6 +6,7 @@ import About from "./components/About"
 import Contact from "./components/Contact"
 import Locations from "./components/Location"
 import Home from "./components/Home"
+import Products from "./components/Products"
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <div>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/products' element={<Products />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/location' element={<Locations />} />

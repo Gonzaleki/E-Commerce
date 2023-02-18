@@ -28,31 +28,31 @@ export const NavOptions = [
         children: [
             {
                 title: 'T-Shirts',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Tank Tops',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Polos',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Henleys',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Casual Button-Down',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             }
@@ -64,25 +64,25 @@ export const NavOptions = [
         children: [
             {
                 title: 'Pullovers',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Cardigans',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Polos',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Vests',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             }
@@ -94,25 +94,25 @@ export const NavOptions = [
         children: [
             {
                 title: 'Regular',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Fit',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Skinny Fit',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Wrangler',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             }
@@ -124,19 +124,19 @@ export const NavOptions = [
         children: [
             {
                 title: 'Dress',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Casual',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             },
             {
                 title: 'Joggings',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
 
             }
@@ -148,25 +148,25 @@ export const NavOptions = [
         children: [
             {
                 title: 'Cargo',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
                 
             },
             {
                 title: 'Denim',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
                 
             },
             {
                 title: 'Flat Front',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
                 
             },
             {
                 title: 'Pleated',
-                url: '#',
+                url: '/products',
                 class: 'dropdown-link'
                 
             }
