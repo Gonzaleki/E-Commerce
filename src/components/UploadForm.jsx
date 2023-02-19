@@ -26,9 +26,14 @@ export default function UploadForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         axios
-            .post("/api/dataBase", formData)
+            .post("/api/mydata", formData)
             .then((res) => console.log(res.data))
             .catch((err) => console.log(err));
+        alert("Your data has been uploaded");
+        setTimeout(() => {
+            window.location.reload();
+        }, 2000
+        );
     };
 
 
