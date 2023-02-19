@@ -6,7 +6,7 @@ import Filters from './Filters';
 export default function Hola() {
   return (
     <main className='list-products'>
-      <h2>List of Products</h2>
+      <h2>Our Products</h2>
       <hr />
       <Filters />
       <ProductList />

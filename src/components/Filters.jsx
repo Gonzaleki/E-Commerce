@@ -19,7 +19,7 @@ export default function Filters() {
                 </select>
             </div>
             <div className='subtype'>
-                <label htmlFor="type">Type</label>
+                <label htmlFor="type">SubType</label>
                 <select name="type" id="type" placeholder='Type'>
                     <option hidden selected> -- select --</option>
                     <option value="shirt">Shirt</option>
