@@ -1,0 +1,38 @@
+.list-products{
+    padding: 0 100px;
+}
+
+.list-products hr{
+    margin-bottom: 40px;
+}
+
+.list-products h2{
+    text-align: center;
+    color: #4e4e4e;
+    padding: 40px;
+}
+
+.filter-panel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 30px;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 2px 4px 5px rgb(130, 130, 130);
+}
+
+.price,
+.type,
+.subtype{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.type select ,
+.subtype select{
+    width: 170px
+}
