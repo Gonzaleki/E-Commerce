@@ -43,4 +43,28 @@
 
 .cards {
     padding: 80px 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
 }
+
+.product-details{
+    width: 100%;
+    text-align: left;
+    line-height: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.add-cart{
+    width: 50px;
+}
+
+.card:hover{
+    border: 6px solid white;
+    cursor: pointer;
+}
+
