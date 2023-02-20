@@ -13,6 +13,14 @@ function App() {
   const cartRef = useRef(null)
   const [aboveNav, setAboveNav] = useState(false);
 
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch('/api/mydata')
+    .then(res=> res.json())
+    .then(res => setData(res))
+    .catch(error => console.error(error));
+    }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       const pageYOffset = window.pageYOffset;
@@ -49,6 +57,7 @@ function App() {
       </div>
 
       <div>
+        <FetchContext.Provider value={data}>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/products' element={<Products />} />
@@ -56,6 +65,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/location' element={<Locations />} />
         </Routes>
+        </FetchContext.Provider>
       </div>
 
     </>
@@ -63,3 +73,5 @@ function App() {
 }
 
 export default App
+
+export const FetchContext = React.createContext();

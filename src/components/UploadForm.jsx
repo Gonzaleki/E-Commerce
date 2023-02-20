@@ -32,7 +32,7 @@ export default function UploadForm() {
         alert("Your data has been uploaded");
         setTimeout(() => {
             window.location.reload();
-        }, 2000
+        }, 500
         );
     };
 

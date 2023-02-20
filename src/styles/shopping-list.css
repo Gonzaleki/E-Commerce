@@ -19,8 +19,12 @@
     box-sizing: border-box;
     border-radius: 25px;
     padding: 30px;
-    background-color: rgb(242, 242, 242);
-    box-shadow: 2px 4px 5px rgb(130, 130, 130);
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 4px 5px rgb(201, 201, 201);
+}
+
+.price{
+    width: 180px;
 }
 
 .price,
@@ -35,4 +39,8 @@
 .type select ,
 .subtype select{
     width: 170px
+}
+
+.cards {
+    padding: 80px 10px;
 }

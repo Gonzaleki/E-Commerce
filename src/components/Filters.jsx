@@ -1,12 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/shopping-list.css'
 
 export default function Filters() {
+
+    const [minPrice, setMinPrice] = useState()
+
+    const handleChangeMinPrice = (e) => {
+        setMinPrice(e.target.value)
+      }
+
     return (
         <section className='filter-panel'>
             <div className='price'>
                 <label htmlFor='price'>Price</label>
-                <input type="range" name="price" min='0' max='100' />
+                <input type="range" name="price" min='0' max='100' onChange={handleChangeMinPrice} />
+                <span>${minPrice}</span>
             </div>
             <div className='type'>
                 <label htmlFor="type">Type</label>

@@ -5,16 +5,11 @@ import Discount from "./Discount";
 import Tendency from "./Tendency";
 import Footer from './Footer'
 import Services from "./Services";
-import { useState, useEffect } from "react";
+import { FetchContext } from "../App";
+import { useContext } from "react";
 
-function Home() {
-    const [data, setData] = useState(null);
-    useEffect(() => {
-      fetch('/api/mydata')
-      .then(res=> res.json())
-      .then(res => setData(res))
-      .catch(error => console.error(error));
-      }, []);
+function Home(value) {
+    const data = useContext(FetchContext)
 
     return (
         <>
