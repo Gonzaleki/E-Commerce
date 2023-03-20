@@ -9,7 +9,6 @@ export default function ProductList() {
     currency: 'USD',
   });
 
-  console.log(data);
 
   return (
     <main>

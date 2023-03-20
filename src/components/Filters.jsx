@@ -14,7 +14,6 @@ export default function Filters() {
         setSelectedValue(e.target.value)
     }
 
-    let mock = NavOptions;
 
     return (
         <section className='filter-panel'>

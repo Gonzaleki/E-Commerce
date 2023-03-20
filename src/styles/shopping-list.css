@@ -61,6 +61,11 @@
     width: 250px;
 }
 
+.card-list:hover {
+    transition: all 0.3s ease-in-out;
+    scale: 1.05;
+}
+
 
 .add {
     width: 50px;
