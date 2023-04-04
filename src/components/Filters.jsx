@@ -86,6 +86,11 @@ export default function Filters() {
                 <label htmlFor="offer">Offer</label>
                 <input type="checkbox" name='offer' />
             </div>
+            <div>
+                <button >
+                    Limpiar
+                </button>
+            </div>
         </section>
     )
 }

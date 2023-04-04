@@ -9,6 +9,7 @@ export default function ProductList() {
     currency: 'USD',
   });
 
+  console.log(data)
 
   return (
     <main>
@@ -16,7 +17,7 @@ export default function ProductList() {
         {data && data.map(item =>
         (
           <div key={item.id} className='card-list' onClick={()=>{alert('soon')}}>
-            <img src={item.img} alt=''></img>
+            <img className='card-img' src={item.img} alt=''></img>
             <span className='product-details'>
               <h3 style={{ marginBottom: 0 }}>{item.name}</h3>
               <h3 style={{ margin: 3 }}>{formatter.format(item.price)}</h3>
