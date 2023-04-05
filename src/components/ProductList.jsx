@@ -4,7 +4,7 @@ import '../styles/shopping-list.css'
 export default function ProductList({products, price, type, subtype, tendency, offer}) {
 
   const [filteredProducts, setFilteredProducts] = useState(products);
-console.log(filteredProducts, 'filtrados')
+
   useEffect(() => {
     let filtered = products;
 
@@ -29,7 +29,7 @@ console.log(filteredProducts, 'filtrados')
     setFilteredProducts(filtered);
 
   }, [products, price, type, subtype, tendency, offer]);
-
+ 
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',

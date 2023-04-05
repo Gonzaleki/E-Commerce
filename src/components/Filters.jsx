@@ -12,6 +12,7 @@ export default function Filters({onFilter}) {
     }
     const handleTypeChangeValue = (e) => {
         setType(e.target.value)
+        setSubtype()
     }
     const handleSubtypeChangeValue = (e) => {
         setSubtype(e.target.value)
